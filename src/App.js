@@ -7,11 +7,9 @@ import FavoritesPage from './pages/Favorites';
 function App() {
   return (<div>
 <Routes>
-<Route path='/'>
-  <AllMeetupsPage/>
-</Route>
-<Route path='new'><NewMeetupPage/></Route>
-<Route path='favorites'><FavoritesPage/></Route>
+<Route path='/' element={<AllMeetupsPage/>}></Route>
+<Route path='/new' element={<NewMeetupPage/>}></Route>
+<Route path='/favorites' element={<FavoritesPage/>}></Route>
 
 </Routes>
 
